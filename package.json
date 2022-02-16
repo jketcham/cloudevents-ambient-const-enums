@@ -1,0 +1,28 @@
+{
+  "name": "cloudevents-ambient-const-enums",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "test": "tsc --noEmit",
+    "build": "rm -rf ./dist && NODE_ENV=production webpack"
+  },
+  "author": "Jack Ketcham",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.0.0",
+    "cloudevents": "^5.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/express": "^4.17.13",
+    "babel-loader": "^8.2.3",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
